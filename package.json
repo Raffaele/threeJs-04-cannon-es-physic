@@ -1,0 +1,20 @@
+{
+  "name": "04-cannon-es-physic",
+  "version": "1.0.0",
+  "author": "Raffaele <mori.raffaele@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/three": "^0.185.1",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.4"
+  },
+  "scripts": {
+    "start": "parcel serve ./src/index.html --no-cache",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "deploy": "yarn build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "cannon-es": "^0.20.0",
+    "three": "^0.185.1"
+  }
+}
